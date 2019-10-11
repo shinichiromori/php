@@ -6,8 +6,7 @@ function sum($max){
 }
  echo sum(2);
  echo "\n";
- ?>
-<?php 
+ 
 //課題2
 function f($a,$b){
  $result = $a + $b;
@@ -15,18 +14,18 @@ function f($a,$b){
 }
 echo f(1,2);
 echo "\n";
-?>
-<?php
-//課題3
-$arr=array(1,3,5,7,9);
-$total=1;
-foreach ($arr as $ar) {
-	$total *= $ar;
+
+//課題3 再提出
+function num($arr){
+ $result = 1;
+ foreach ($arr as $ar) {
+ $result *=$ar;
 }
-echo $total;
+ return $result;
+}
+echo num(array(1, 3, 5 ,7, 9));
 echo "\n";
-?>
-<?php
+
 //課題４
  function max_array($arr){
 // とりあえず配列の最初の要素を一番大きい値とする
